@@ -1,0 +1,131 @@
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #202124;
+}
+
+h1,
+h2,
+h3,
+input,
+button {
+  font-family: 'Press Start 2P', system-ui;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  background: linear-gradient(0deg, rgba(31, 40, 51, 1) 18%, rgba(11, 12, 16, 1) 54%);
+  gap: 14px;
+}
+
+header {
+  display: flex;
+  align-items: stretch;
+}
+
+header,
+.main {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 14px;
+}
+
+header input {
+  flex: 1;
+  border-radius: 14px;
+  outline: none;
+  width: 100%;
+  color: #66fcf1;
+}
+
+header button {
+  border-radius: 14px;
+  color: #66fcf1;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+header button:hover {
+  background: #66fcf1;
+  color: rgb(31, 40, 51);
+}
+
+header button,
+header input {
+  padding: 14px 18px;
+  background-color: rgb(31, 40, 51);
+  border: 2px solid #66fcf1;
+  outline: none;
+}
+
+input::placeholder {
+  color: #66fcf1;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: linear-gradient(0deg, rgba(31, 40, 51, 1) 18%, rgba(11, 12, 16, 1) 54%);
+  border: 2px solid #66fcf1;
+}
+
+.todoItem p {
+  flex: 1;
+  color: #66fcf1;
+  font-size: 20px;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.actionsContainer button {
+  transition-duration: 200ms;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+i{
+  color: #66fcf1;
+  font-size: 14px;
+}
+
+.actionsContainer button:hover {
+  opacity: 0.7;
+}
+
+
+
+@media (min-width: 640px) {
+
+  header button,
+  header input {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
